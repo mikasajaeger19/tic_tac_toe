@@ -10,7 +10,7 @@ function App() {
 
   useEffect(() => {
     checkWin();
-    if(player == "X")
+    if(player === "X")
         setPlayer("O");
       else
         setPlayer("X");
@@ -18,7 +18,7 @@ function App() {
   }, [board]);
 
   useEffect(() => {
-    if(result.state == "draw"){
+    if(result.state === "draw"){
       alert("Draw!");
       restartGame();
     }
